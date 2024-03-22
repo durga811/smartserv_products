@@ -15,6 +15,7 @@ const Filter = ({ handleFilterChange }) => {
                 <option value="tablet">Tablet</option>
                 <option value="smart-watches">Smart Watches</option>
                 <option value="fitness-tracker">Fitness Tracker</option>
+                <option value="">All</option>
             </select>
         </div>
 

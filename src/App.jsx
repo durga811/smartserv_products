@@ -35,7 +35,7 @@ const App = () => {
   const filterByPrice = (name, value) => {
     const minPrice = name === 'minPrice' ? parseFloat(value) : parseFloat(document.getElementById('minPrice').value);
     const maxPrice = name === 'maxPrice' ? parseFloat(value) : parseFloat(document.getElementById('maxPrice').value);
-
+  
     const filtered = products.filter(product => {
       const price = parseFloat(product.price);
       return price >= minPrice && price <= maxPrice;
