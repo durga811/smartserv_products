@@ -1,4 +1,4 @@
-// src/components/Filter.js
+
 
 import React from 'react';
 
@@ -8,10 +8,16 @@ const Filter = ({ handleFilterChange }) => {
       <h2 className="text-lg font-semibold mb-2 inline">Filter Products</h2>
       <form onChange={handleFilterChange}>
         <div className="flex flex-col md:flex-row gap-4">
-          <div className="flex flex-col">
+        <div className="flex flex-col">
             <label htmlFor="subcategory">Subcategory:</label>
-            <input type="text" id="subcategory" name="subcategory" className="border p-2 rounded-md" />
-          </div>
+            <select id="subcategory" name="subcategory" className="border p-2 rounded-md">
+                <option value="mobile">Mobile</option>
+                <option value="tablet">Tablet</option>
+                <option value="smart-watches">Smart Watches</option>
+                <option value="fitness-tracker">Fitness Tracker</option>
+            </select>
+        </div>
+
           <div className="flex flex-col">
             <label htmlFor="priceRange">Price Range:</label>
             <input type="number" id="minPrice" name="minPrice" placeholder="Min" className="border p-2 rounded-md" />
